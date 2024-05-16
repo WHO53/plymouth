@@ -13,6 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+#ifndef __LP64__
+#define _LARGEFILE64_SOURCE
+#endif
+
 #include <drm_fourcc.h>
 #include <fcntl.h>
 #include <stdbool.h>
