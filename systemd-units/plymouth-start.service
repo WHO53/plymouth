@@ -9,7 +9,7 @@ ConditionVirtualization=!container
 IgnoreOnIsolate=true
 
 [Service]
-ExecStart=/usr/local/sbin/plymouthd --mode=boot --pid-file=${prefix}/var/run/plymouth/pid --attach-to-session
+ExecStart=/usr/local/sbin/plymouthd --mode=boot --pid-file=${prefix}/var/run/plymouth/pid --attach-to-session --ignore-serial-consoles
 ExecStartPost=-/usr/local/bin/plymouth show-splash
 Type=forking
 RemainAfterExit=yes

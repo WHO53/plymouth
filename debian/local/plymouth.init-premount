@@ -38,6 +38,6 @@ if [ "${SPLASH}" = "true" ]
 then
 	export PLYMOUTH_FORCE_SCALE
 	mkdir -m 0755 /run/plymouth
-	/usr/sbin/plymouthd --mode=boot --attach-to-session --pid-file=/run/plymouth/pid --kernel-command-line "splash plymouth.ignore-udev"
+	/usr/sbin/plymouthd --mode=boot --attach-to-session --pid-file=/run/plymouth/pid --kernel-command-line "splash plymouth.ignore-udev" --ignore-serial-consoles
 	/usr/bin/plymouth --show-splash
 fi
