@@ -11,7 +11,7 @@ Build-Depends: debhelper-compat (= 12),
                libpng-dev,
                libudev-dev,
                pkg-config,
-               systemd,
+               systemd-dev,
                xsltproc
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
