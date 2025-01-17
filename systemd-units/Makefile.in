@@ -108,6 +108,7 @@ CONFIG_CLEAN_FILES = plymouth-halt.service plymouth-kexec.service \
 	plymouth-poweroff.service plymouth-quit.service \
 	plymouth-quit-wait.service plymouth-read-write.service \
 	plymouth-reboot.service plymouth-start.service \
+	plymouth-determine-scale.service \
 	plymouth-switch-root.service \
 	plymouth-switch-root-initramfs.service \
 	systemd-ask-password-plymouth.path \
