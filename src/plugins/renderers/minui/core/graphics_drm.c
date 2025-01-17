@@ -312,7 +312,7 @@ static void disable_non_main_crtcs(int fd,
         drmModeFreeCrtc(crtc);
     }
 }
-static GRSurface* drm_init(minui_backend* backend __unused) {
+static GRSurface* drm_init(minui_backend* backend __unused, _Bool unused __unused) {
     drmModeRes *res = NULL;
     uint32_t selected_mode;
     char *dev_name;
